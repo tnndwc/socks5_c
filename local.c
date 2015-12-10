@@ -119,6 +119,7 @@ static void ss_accept_handle(void *s, int fd, void *data, int mask)
 
 int main(int argc, char **argv)
 {
+	printf("%s\n", "local start");
 	struct ss_server_ctx *lo_s;
 	enum ss_encrypt_method encry_method = NO_ENCRYPT;
 	struct encry_key_s *key = NULL;
