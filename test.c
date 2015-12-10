@@ -27,5 +27,5 @@ int main(){
     key->len = key_len;
     memcpy(key->key, st, key_len);
 
-    printf(&key->key);
+    printf("%.*s\n", key_len, key->key);
 }
